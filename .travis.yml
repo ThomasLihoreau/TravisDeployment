@@ -1,0 +1,17 @@
+language: cpp
+sudo: required
+complier: 
+  - g++
+os:
+  - linux
+before_install:
+  - test -n $CC && unset CC
+  - test -n $CXX && unset CXX
+script:
+branches:
+  - master
+notifications:
+  email: false
+env:
+  global:
+    - LANG="fr_FR.UTF-8"
